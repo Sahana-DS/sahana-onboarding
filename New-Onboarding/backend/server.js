@@ -14,11 +14,11 @@ const PORT = process.env.PORT || 3420;
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL,
-    "http://44.223.23.145:8039",
-    "http://44.223.23.145:3420",
-    "http://127.0.0.1:5500",
-    "http://localhost:5500",
-    "http://44.223.23.145:8040"
+    "http://54.227.149.186:8039",
+    "http://54.227.149.186:3420",
+    "http://54.227.149.186:5500",
+    "http://54.227.149.186:5500",
+    "http://54.227.149.186:8040"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
@@ -40,7 +40,7 @@ const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
   host: process.env.DB_HOST || 'db',
   database: process.env.DB_NAME || 'onboarding',
-  password: process.env.DB_PASSWORD || 'admin123',
+  password: process.env.DB_PASSWORD || 'admin234',
   port: process.env.DB_PORT || 5432,
   max: 20, // maximum number of clients in the pool
   idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
